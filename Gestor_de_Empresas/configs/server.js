@@ -5,13 +5,17 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 import { dbConnection } from './mongo.js';
+import userRoutes from '../src/users/user.routes.js';
+import authRoutes from '../src/auth/auth.routes.js';
+import companiesRoutes from '../src/companies/companies.routes.js';
 
 class Server{
     constructor(){
         this.app = express();
         this.port = process.env.PORT;
-
-        //Aqui van las importanciones que trabajemos para agregarles URL`s
+        this.usersPath = '/businessmanagerApi/v1/users'
+        this.authPath = '/businessmanagerApi/v1/auth'
+        this.companiesPath = '/businessmanagerApi/v1/companies'
 
         this.middleware();
         this.conectarDB();
@@ -23,11 +27,17 @@ class Server{
     }
 
     middleware(){
-
+        this.app.use(express.urlencoded({extended: false}));
+        this.app.use(cors());
+        this.app.use(express.json());
+        this.app.use(helmet());
+        this.app.use(morgan('dev'));
     }
 
     routes(){
-
+        this.app.use(this.usersPath, userRoutes);
+        this.app.use(this.authPath, authRoutes);
+        this.app.use(this.companiesPath, companiesRoutes);
     }
 
     listen(){

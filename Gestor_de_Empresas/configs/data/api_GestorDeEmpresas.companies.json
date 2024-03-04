@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "65e432337abc270bc3224be9"
+  },
+  "name": "Cemaco",
+  "impactLevel": "Masivo",
+  "yearsExperience": 10,
+  "companyCategory": "Ventas",
+  "user": {
+    "$oid": "65e40447d904fb1c680c5891"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e4364e051373a5425a216f"
+  },
+  "name": "Pollo Rey",
+  "impactLevel": "Masivo",
+  "yearsExperience": 25,
+  "companyCategory": "Alimentos",
+  "user": {
+    "$oid": "65e40447d904fb1c680c5891"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e43687051373a5425a2172"
+  },
+  "name": "Sarita",
+  "impactLevel": "Regular",
+  "yearsExperience": 12,
+  "companyCategory": "Dulceria",
+  "user": {
+    "$oid": "65e40447d904fb1c680c5891"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e44de18956b5995011e67f"
+  },
+  "name": "Celco",
+  "impactLevel": "Regular",
+  "yearsExperience": 20,
+  "companyCategory": "Productos",
+  "user": {
+    "$oid": "65e40447d904fb1c680c5891"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e450dd603575c217f46851"
+  },
+  "name": "Celco 1",
+  "impactLevel": "Regular",
+  "yearsExperience": 20,
+  "companyCategory": "Productos",
+  "user": {
+    "$oid": "65e40447d904fb1c680c5891"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e450e1603575c217f46854"
+  },
+  "name": "Celco 2",
+  "impactLevel": "Regular",
+  "yearsExperience": 20,
+  "companyCategory": "Productos",
+  "user": {
+    "$oid": "65e40447d904fb1c680c5891"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e450e4603575c217f46857"
+  },
+  "name": "Coban",
+  "impactLevel": "Masivo",
+  "yearsExperience": 25,
+  "companyCategory": "Zapatos",
+  "user": {
+    "$oid": "65e40447d904fb1c680c5891"
+  },
+  "state": true,
+  "__v": 0
+}]
